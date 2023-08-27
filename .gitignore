@@ -1,0 +1,63 @@
+# Mac
+Thumbs.db
+.DS_Store
+
+# Jetbrains local
+.idea
+*.iml
+
+# Build artefacts
+node_modules/
+out/
+build
+
+# Local gradle
+.gradle
+local.properties
+
+# VIM
+*.swp
+
+######### Tentative iOS stuff from https://www.toptal.com/developers/gitignore/api/swift,xcode
+
+## User settings
+xcuserdata/
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+
+iOSInjectionProject/
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+captures
+.externalNativeBuild
+.cxx
+
+Carthage/
+Cartfile.resolved
+
+## Firebase and web
+yarn.lock
+google-services.json
+fbConfig.json
+.firebaserc
+emu-data/
+application.log
