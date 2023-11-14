@@ -13,13 +13,18 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_19
-        targetCompatibility = JavaVersion.VERSION_19
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     namespace = "com.kanastruk.united.libShared"
 }
+dependencies {
+    implementation(libs.androidx.camera.core)
+}
 
 kotlin {
+    jvmToolchain(17)
+
     androidTarget()
     jvm()
     js(IR) {
@@ -32,12 +37,15 @@ kotlin {
             dependencies {
                 implementation(libs.kotlinx.serialization)
                 implementation(libs.kotlin.coroutines)
+                implementation(libs.ktor.client.core)
             }
         }
         val androidMain by getting {
             dependencies {
                 // ANDROID
                 implementation(libs.kotlin.coroutinesPlayServices)
+
+                implementation(libs.ktor.client.okhttp)
 
                 // Square Networking
                 api(libs.google.gson)

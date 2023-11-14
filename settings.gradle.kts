@@ -19,3 +19,16 @@ include(":jsApp")
 include(":wasmApp")
 include(":backendMn")
 include(":libShared")
+
+/**
+ * Some of the usual 'check android tools versioning' basic links.
+ *
+ * https://developer.android.com/tools/releases/platforms
+ * For the 'upgrade plugin vs minimum gradle version'
+ * https://developer.android.com/build/releases/gradle-plugin
+ *
+ * (All the same but still linking them.)
+ * https://mvnrepository.com/artifact/com.android.tools.build/gradle?repo=google
+ * https://mvnrepository.com/artifact/com.android.application/com.android.application.gradle.plugin?repo=google
+ * https://mvnrepository.com/artifact/com.android.library/com.android.library.gradle.plugin?repo=google
+ */
